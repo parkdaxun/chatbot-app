@@ -10,6 +10,7 @@
   "scripts": {
     "start": "node index.js",
     "backend": "nodemon index.js",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "frontend": "npm run front --prefix client",
     "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
   },
